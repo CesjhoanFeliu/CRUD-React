@@ -26,7 +26,7 @@ function Todo({ item, onUpdate, onDelete }) {
           onChange={handleChange}
           value={newValue}
         />
-        <button className="button" onClick={handleClickUpdate}>
+        <button className="buttonUpdate" onClick={handleClickUpdate}>
           Update
         </button>
       </form>
@@ -36,8 +36,13 @@ function Todo({ item, onUpdate, onDelete }) {
   function TodoElement() {
     return (
       <div className="todoinfo">
-        {item.tittle} <button onClick={() => setIsEdit(true)}>Editar</button>
-        <button onClick={(e) => onDelete(item.id)}>Delete</button>
+        <span className="todoTittle">{item.tittle}</span>{" "}
+        <button className="buttonEdit" onClick={() => setIsEdit(true)}>
+          Editar
+        </button>
+        <button className="buttonDelete" onClick={(e) => onDelete(item.id)}>
+          Delete
+        </button>
       </div>
     );
   }

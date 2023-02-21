@@ -22,6 +22,7 @@ function TodoApp() {
     const temp = [...todos];
     temp.unshift(newTodo);
     setTodos(temp);
+    setTitle("");
   }
   function handleUpdate(id, value) {
     const temp = [...todos];
@@ -44,7 +45,6 @@ function TodoApp() {
           value="Create todo"
           className="buttonCreate"
         />
-        {tittle}
       </form>
       <div className="todosContainer">
         {todos.map((item) => (

@@ -1,0 +1,120 @@
+body {
+  background-image: linear-gradient(
+    to left,
+    #b2cdf6,
+    #8aa8e0,
+    #6684ca,
+    #4561b2,
+    #253e99
+  );
+  font-family: "Nunito", sans-serif;
+}
+.todoContainer {
+  width: 500px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.todoCreateForm {
+  display: flex;
+  gap: 5px;
+}
+
+.todoInput {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px #999;
+}
+
+.buttonCreate {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.buttonCreate:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .buttonCreate,
+  .buttonEdit,
+  .buttonDelete {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+.todo {
+  padding: 10px;
+  background-color: transparent;
+  color: #f2f2f2;
+}
+.todoTittle {
+  flex: 1;
+  font-size: 20px;
+}
+
+.todoUpdateForm,
+.todoInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.buttonEdit,
+.buttonDelete,
+.buttonUpdate {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid;
+  padding: 0.2em 0.3em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 5px;
+}
+.buttonUpdate {
+  background-color: #12bb45be;
+}
+.buttonEdit {
+  background-color: #2183e4be;
+}
+.buttonDelete {
+  background-color: #e72e2ebe;
+}
+
+.buttonDelete:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+.buttonEdit:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
