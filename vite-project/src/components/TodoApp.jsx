@@ -37,13 +37,24 @@ function TodoApp() {
   }
   return (
     <div className="todoContainer">
-      <form action="" className="todoCreateForm" onSubmit={handleSubmit}>
-        <input onChange={handleChange} className="todoInput" value={tittle} />
+      <form
+        action=""
+        className="todoCreateForm"
+        onSubmit={handleSubmit}
+        required
+      >
+        <input
+          onChange={handleChange}
+          className="todoInput"
+          value={tittle}
+          required
+        />
         <input
           onClick={handleSubmit}
           type="submit"
-          value="Create todo"
+          value="Crear Tarea"
           className="buttonCreate"
+          required
         />
       </form>
       <div className="todosContainer">
